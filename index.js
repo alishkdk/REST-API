@@ -26,7 +26,7 @@ app.post("/api/users",(req,res)=>{
     users.push({...body, id: users.length + 1});
     fs.writeFile("./MOCK_DATA.json",JSON.stringify(users),(err,data)=>{
      
-        return res.json({status:"id:users"});
+        return res.json({status:"sucess",id:length});
     });
 });
 
